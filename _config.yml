@@ -4,18 +4,18 @@ minimal_mistakes_skin: "default"   # Alternativen: air, aqua, contrast, dark, di
 
 # ---------- Seite ----------
 locale: "de-DE"
-title: "Dein Name"                 # <- ANPASSEN
+title: "Johann Kluge"                 # <- ANPASSEN
 title_separator: "-"
-name: "Dein Name"                  # <- ANPASSEN
+name: "Johann"                  # <- ANPASSEN
 description: "Portfolio: Video, Foto und Hobbys"
-url: "https://USERNAME.github.io"  # <- USERNAME ersetzen
+url: "https://Tphoon.github.io"  # <- USERNAME ersetzen
 baseurl: ""
-repository: "USERNAME/USERNAME.github.io"
+repository: "Tphoon/Typhoon.github.io"
 words_per_minute: 200
 
 # ---------- Autorenprofil (Seitenleiste auf der "Über mich"-Seite) ----------
 author:
-  name: "Dein Name"
+  name: "Johann Kluge"
   avatar: "/assets/images/avatar.jpg"
   bio: "Kurzer Satz über dich."
   location: "Chemnitz, Deutschland"
