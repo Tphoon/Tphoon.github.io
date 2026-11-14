@@ -8,7 +8,7 @@ title: "Johann Kluge"                 # <- ANPASSEN
 title_separator: "-"
 name: "Johann"                  # <- ANPASSEN
 description: "Portfolio: Video, Foto und Hobbys"
-url: "https://Tphoon.github.io"  # <- USERNAME ersetzen
+url: "https://tphoon.github.io/Typhoon.github.io/"  # <- USERNAME ersetzen
 baseurl: ""
 repository: "Tphoon/Typhoon.github.io"
 words_per_minute: 200
