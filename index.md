@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 title: ""
 header:
-  overlay_color: "#1d2733"
+  overlay_color: "#493548"
   overlay_image: /assets/images/hero.jpg
   overlay_filter: 0.45
   actions:
