@@ -1,6 +1,62 @@
-title: Hello World
-description: Meine erste Seite auf GitHub Pages
+# ---------- Theme ----------
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "default"   # Alternativen: air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
+
+# ---------- Seite ----------
+locale: "de-DE"
+title: "Dein Name"                 # <- ANPASSEN
+title_separator: "-"
+name: "Dein Name"                  # <- ANPASSEN
+description: "Portfolio: Video, Foto und Hobbys"
+url: "https://USERNAME.github.io"  # <- USERNAME ersetzen
+baseurl: ""
+repository: "USERNAME/USERNAME.github.io"
+words_per_minute: 200
+
+# ---------- Autorenprofil (Seitenleiste auf der "Über mich"-Seite) ----------
+author:
+  name: "Dein Name"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Kurzer Satz über dich."
+  location: "Chemnitz, Deutschland"
+  links:
+    - label: "E-Mail"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:deine@mail.de"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@DEINKANAL"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/DEINNAME"
+
+# ---------- Footer (Impressum und Datenschutz müssen von jeder Seite erreichbar sein) ----------
+footer:
+  links:
+    - label: "Impressum"
+      icon: "fas fa-fw fa-info-circle"
+      url: "/impressum/"
+    - label: "Datenschutz"
+      icon: "fas fa-fw fa-shield-alt"
+      url: "/datenschutz/"
+    - label: "Kontakt"
+      icon: "fas fa-fw fa-envelope"
+      url: "/kontakt/"
+
+# ---------- Build ----------
+include:
+  - _pages
 plugins:
+  - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-sitemap
+
+# ---------- Standardwerte ----------
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
