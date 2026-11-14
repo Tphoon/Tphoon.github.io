@@ -2,12 +2,256 @@
 # Nur nötig, damit Jekyll die Datei verarbeitet
 ---
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+/* ==========================================================================
+   Eigene Farbpalette
+   ========================================================================== */
+$aubergine: #493548;   /* Kopfzeile, Footer, Flächen */
+$teal:      #1c5253;   /* Seitenhintergrund */
+$white:     #ffffff;   /* Text */
+$mint:      #a1e887;   /* Links, Hover, Hervorhebungen */
+$violet:    #724cf9;   /* Buttons, Akzente */
+
+/* Variablen für das Theme (müssen VOR dem Import stehen) */
+$background-color:            $teal;
+$text-color:                  $white;
+$muted-text-color:            mix($white, $teal, 75%);
+$primary-color:               $violet;
+$border-color:                mix($white, $teal, 18%);
+$code-background-color:       mix(#000, $teal, 25%);
+$code-background-color-dark:  mix(#000, $teal, 35%);
+$form-background-color:       mix(#000, $teal, 20%);
+$footer-background-color:     $aubergine;
+$link-color:                  $mint;
+$link-color-hover:            mix($white, $mint, 40%);
+$link-color-visited:          mix(#000, $mint, 15%);
+$masthead-link-color:         $white;
+$masthead-link-color-hover:   $mint;
+$navicon-link-color-hover:    $mint;
+
 @import "minimal-mistakes";
 
-/* Klick-zum-Laden-Feld für YouTube */
+/* ==========================================================================
+   Grundlagen
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $teal;
+  color: $white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: $violet;
+  color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Gut sichtbarer Tastaturfokus */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid $mint;
+  outline-offset: 2px;
+}
+
+/* Seitentitel mit kleinem Farbbalken */
+.page__title {
+  margin-bottom: 0.4em;
+}
+.page__title::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 0.6rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, $violet, $mint);
+}
+.page__hero--overlay .page__title::after {
+  display: none;
+}
+
+blockquote {
+  border-left: 4px solid $violet;
+  color: mix($white, $teal, 90%);
+}
+
+hr {
+  border-color: $border-color;
+}
+
+/* ==========================================================================
+   Kopfzeile und Navigation
+   ========================================================================== */
+.masthead {
+  background-color: $aubergine;
+  border-bottom: 3px solid $violet;
+}
+
+.masthead__inner-wrap {
+  background-color: transparent;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.greedy-nav {
+  background-color: $aubergine;
+}
+.greedy-nav a {
+  color: $white;
+}
+.greedy-nav .visible-links a:before {
+  background: $mint;
+  height: 3px;
+}
+.greedy-nav .visible-links a:hover {
+  color: $mint;
+  text-decoration: none;
+}
+.greedy-nav button {
+  background-color: $violet;
+}
+.greedy-nav button:hover {
+  background-color: mix($white, $violet, 15%);
+}
+.greedy-nav .hidden-links {
+  background-color: $aubergine;
+  border: 1px solid mix($white, $aubergine, 20%);
+  border-radius: 6px;
+}
+.greedy-nav .hidden-links:before,
+.greedy-nav .hidden-links:after {
+  border-bottom-color: mix($white, $aubergine, 20%);
+}
+.greedy-nav .hidden-links a:hover {
+  color: $mint;
+}
+.navicon,
+.navicon:before,
+.navicon:after {
+  background: $white;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn,
+.btn--primary {
+  background-color: $violet;
+  color: $white;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover,
+.btn--primary:hover {
+  background-color: mix($white, $violet, 15%);
+  color: $white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   Startseite (Hero und Kacheln)
+   ========================================================================== */
+.page__hero--overlay {
+  background-color: $aubergine !important;
+}
+.page__hero--overlay .page__lead,
+.page__hero--overlay .page__title {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.feature__item .archive__item-teaser {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.feature__item:hover .archive__item-teaser {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+.feature__item .archive__item-title {
+  margin-top: 0.9em;
+}
+
+/* ==========================================================================
+   Bildergalerien
+   ========================================================================== */
+.gallery img {
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.gallery a:hover img {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
+}
+.gallery figcaption,
+.gallery__item figcaption {
+  color: $muted-text-color;
+}
+
+/* ==========================================================================
+   Autorenprofil (Seite "Über mich")
+   ========================================================================== */
+.author__avatar img {
+  border: 3px solid $violet;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.page__footer {
+  background-color: $aubergine;
+  border-top: 4px solid $violet;
+  color: $white;
+}
+.page__footer a,
+.page__footer-follow .social-icons a {
+  color: $white;
+}
+.page__footer a:hover,
+.page__footer-follow .social-icons a:hover {
+  color: $mint;
+}
+.page__footer-copyright {
+  color: mix($white, $aubergine, 70%);
+}
+
+/* ==========================================================================
+   YouTube: Klick-zum-Laden-Feld
+   ========================================================================== */
 .yt-consent {
   margin-bottom: 2em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 .yt-consent__btn {
   position: absolute;
@@ -21,19 +265,38 @@
   justify-content: center;
   gap: 0.6em;
   padding: 1.5em;
-  background: #1d2733;
-  color: #fff;
+  background: linear-gradient(135deg, $aubergine, mix(#000, $teal, 30%));
+  color: $white;
   border: 0;
   cursor: pointer;
   text-align: center;
   font: inherit;
 }
-.yt-consent__btn:hover,
-.yt-consent__btn:focus-visible {
-  background: #2b3a4a;
+.yt-consent__btn::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $violet url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M8 5v14l11-7z'/%3E%3C/svg%3E") center / 55% no-repeat;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.yt-consent__btn:hover::before,
+.yt-consent__btn:focus-visible::before {
+  transform: scale(1.08);
+  background-color: mix($white, $violet, 15%);
+}
+.yt-consent__btn strong {
+  font-size: 1.1em;
 }
 .yt-consent__btn span {
   font-size: 0.8em;
   opacity: 0.85;
   max-width: 34em;
+}
+
+/* Bewegungen abschalten, wenn der Nutzer das wünscht */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
 }
