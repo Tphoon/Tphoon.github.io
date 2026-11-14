@@ -1,0 +1,11 @@
+main:
+  - title: "Video"
+    url: /video/
+  - title: "Foto"
+    url: /foto/
+  - title: "Hobby"
+    url: /hobby/
+  - title: "Über mich"
+    url: /about/
+  - title: "Kontakt"
+    url: /kontakt/

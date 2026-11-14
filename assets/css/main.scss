@@ -1,0 +1,39 @@
+---
+# Nur nötig, damit Jekyll die Datei verarbeitet
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Klick-zum-Laden-Feld für YouTube */
+.yt-consent {
+  margin-bottom: 2em;
+}
+.yt-consent__btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  padding: 1.5em;
+  background: #1d2733;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font: inherit;
+}
+.yt-consent__btn:hover,
+.yt-consent__btn:focus-visible {
+  background: #2b3a4a;
+}
+.yt-consent__btn span {
+  font-size: 0.8em;
+  opacity: 0.85;
+  max-width: 34em;
+}

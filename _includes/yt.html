@@ -1,0 +1,10 @@
+{%- comment -%}
+  YouTube-Einbettung mit Klick (Zwei-Klick-Lösung).
+  Aufruf: {% include yt.html id="VIDEO_ID" title="Titel" %}
+{%- endcomment -%}
+<div class="yt-consent responsive-video-container" data-id="{{ include.id }}" data-title="{{ include.title | escape }}">
+  <button type="button" class="yt-consent__btn">
+    <strong>{{ include.title }}</strong>
+    <span>Video abspielen. Beim Laden werden Daten an YouTube (Google) übertragen.</span>
+  </button>
+</div>

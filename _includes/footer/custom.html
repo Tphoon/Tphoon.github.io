@@ -1,0 +1,14 @@
+<script>
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.yt-consent__btn');
+    if (!btn) return;
+    var box = btn.parentNode;
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.dataset.id) + '?autoplay=1';
+    iframe.title = box.dataset.title || 'YouTube-Video';
+    iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    box.replaceChild(iframe, btn);
+  });
+</script>
