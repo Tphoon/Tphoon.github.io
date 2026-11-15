@@ -8,9 +8,11 @@ Die Videos werden erst nach einem Klick von YouTube geladen. Mehr dazu in der [D
 
 ## Erstes Video
 
-Kurze Beschreibung: Worum geht es, wann und womit entstanden?
+Q1 2026 - Produktion einer fiktiven Werbung im Rahmen des BLACKBOX VIRTUAL PRODUCTION Programms im 4. Semester
 
-{% include yt.html id="VIDEO_ID_1" title="Titel des ersten Videos" %}
+{% include yt.html id="Wi-ZVGR73X8" title="MEAI.io | Virtual Production Commercial" %}
+
+Tätigkeit: Kameraführung, Schnitt, Kommunikation und Set-Building
 
 ## Zweites Video
 
