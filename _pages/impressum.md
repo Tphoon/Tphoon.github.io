@@ -17,9 +17,10 @@ E-Mail: johann4kluge@gmail.com
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-[Vorname Nachname]  
-[Anschrift wie oben]
-
+Johann Kluge 
+Feldstraße 3
+09648 Mittweida
+Deutschland
 ## Haftung für Inhalte
 
 Als Diensteanbieter bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Bei Bekanntwerden von Rechtsverletzungen entferne ich die betreffenden Inhalte umgehend.
