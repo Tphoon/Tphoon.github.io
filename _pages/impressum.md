@@ -4,19 +4,16 @@ permalink: /impressum/
 sitemap: false
 ---
 
-**Wichtig:** Dies ist eine Vorlage. Ersetze alle Angaben in eckigen Klammern durch deine echten Daten und prüfe, ob sie für deine Situation vollständig ist. Lösche diesen Absatz danach.
-
 ## Angaben gemäß § 5 DDG
 
-[Vorname Nachname]  
-[Straße und Hausnummer]  
-[PLZ Ort]  
+Johann Kluge
+Feldstraße 3
+09648 Mittweida
 Deutschland
 
 ## Kontakt
 
-E-Mail: [deine@mail.de]  
-Telefon (optional): [Telefonnummer]
+E-Mail: johann4kluge@gmail.com
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
