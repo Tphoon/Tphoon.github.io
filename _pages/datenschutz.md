@@ -6,10 +6,10 @@ sitemap: false
 
 ## 1. Verantwortlicher
 
-Johann Kluge 
-Feldstraße 3
-09648 Mittweida
-E-Mail: johann4kluge@gmail.com
+Johann Kluge  
+Feldstraße 3  
+09648 Mittweida  
+E-Mail: johann4kluge@gmail.com  
 
 ## 2. Hosting über GitHub Pages
 
