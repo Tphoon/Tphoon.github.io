@@ -3,28 +3,28 @@ title: "Hobby"
 permalink: /hobby/
 excerpt: "Was mich neben dem Studium beschäftigt."
 gallery_hobby:
-  - url: /assets/images/hobby/000001.jpg
-    image_path: /assets/images/hobby/000001.jpg
+  - url: /assets/images/hobby/000001.JPG
+    image_path: /assets/images/hobby/000001.JPG
     alt: "Hobby Bild 1"
     title: "Hobby Bild 1"
-  - url: /assets/images/hobby/000007.jpg
-    image_path: /assets/images/hobby/000007.jpg
+  - url: /assets/images/hobby/000007.JPG
+    image_path: /assets/images/hobby/000007.JPG
     alt: "Hobby Bild 2"
     title: "Hobby Bild 2"
-  - url: /assets/images/hobby/000018.jpg
-    image_path: /assets/images/hobby/000018.jpg
+  - url: /assets/images/hobby/000018.JPG
+    image_path: /assets/images/hobby/000018.JPG
     alt: "Hobby Bild 3"
     title: "Hobby Bild 3"
-  - url: /assets/images/hobby/000025.jpg
-    image_path: /assets/images/hobby/000025.jpg
+  - url: /assets/images/hobby/000025.JPG
+    image_path: /assets/images/hobby/000025.JPG
     alt: "Hobby Bild 4"
     title: "Hobby Bild 4"
-  - url: /assets/images/hobby/000031.jpg
-    image_path: /assets/images/hobby/000031.jpg
+  - url: /assets/images/hobby/000031.JPG
+    image_path: /assets/images/hobby/000031.JPG
     alt: "Hobby Bild 5"
     title: "Hobby Bild 5"
-  - url: /assets/images/hobby/000035.jpg
-    image_path: /assets/images/hobby/000035.jpg
+  - url: /assets/images/hobby/000035.JPG
+    image_path: /assets/images/hobby/000035.JPG
     alt: "Hobby Bild 6"
     title: "Hobby Bild 6"
 
