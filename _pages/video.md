@@ -1,12 +1,12 @@
 ---
 title: "Video"
 permalink: /video/
-excerpt: "Eine Auswahl meiner Videos."
+excerpt: "Eine Auswahl meiner Videoprojekte."
 ---
 
 Die Videos werden erst nach einem Klick von YouTube geladen. Mehr dazu in der [Datenschutzerklärung](/datenschutz/).
 
-## Erstes Video
+## Virtual Production
 
 Q1 2026 - Produktion einer fiktiven Werbung im Rahmen des BLACKBOX VIRTUAL PRODUCTION Programms im 4. Semester
 
