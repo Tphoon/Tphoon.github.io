@@ -19,7 +19,7 @@ gallery_hobby:
     image_path: /assets/images/hobby/000025.jpg
     alt: "Hobby Bild 4"
     title: "Hobby Bild 4"
-- url: /assets/images/hobby/000031.jpg
+  - url: /assets/images/hobby/000031.jpg
     image_path: /assets/images/hobby/000031.jpg
     alt: "Hobby Bild 5"
     title: "Hobby Bild 5"
